@@ -1,0 +1,298 @@
+@page
+@model WebKPIR.Pages.Dziennik.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Dziennik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Ksiega)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Ksiega)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Struktura)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Struktura)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NazwaSkr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NazwaSkr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NumerDok)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NumerDok)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Data)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Data)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Dzien)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Dzien)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Opis)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Opis)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Rejestr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Rejestr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Netto22)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Netto22)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Vat22)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Vat22)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Netto12)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Netto12)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Vat12)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Vat12)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Netto07)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Netto07)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Vat07)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Vat07)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Netto03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Netto03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Vat03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Vat03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Netto0)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Netto0)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Nettozwol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Nettozwol)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Bezodl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Bezodl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.VatBezodl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.VatBezodl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.TypBezodl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.TypBezodl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NettoNp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NettoNp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Brutto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Brutto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.DataOtrz)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.DataOtrz)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.MiesVat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.MiesVat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.MiesKs)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.MiesKs)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Korekta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Korekta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Uwagi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Uwagi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Samochod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Samochod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NumerRej)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NumerRej)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Eksport)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Eksport)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Notatki)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Notatki)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NajemTyp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NajemTyp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.RozlTyp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.RozlTyp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.FormaP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.FormaP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.TerminP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.TerminP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.WartoscZ)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.WartoscZ)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Kasa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Kasa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.TypFakt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.TypFakt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NipKod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NipKod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.OpdKod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.OpdKod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NrEwid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NrEwid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NazwaUsl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NazwaUsl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.Rok)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.Rok)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.KontoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.KontoNavigation.Konto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dziennik.NazwaSkrNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dziennik.NazwaSkrNavigation.Nip)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Dziennik.Numer" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,294 @@
+@model WebKPIR.Model.Ksiega.Dziennik
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dziennik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ksiega)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ksiega)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Struktura)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Struktura)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NazwaSkr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NazwaSkr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumerDok)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumerDok)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dzien)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dzien)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rejestr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rejestr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Netto22)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Netto22)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vat22)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vat22)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Netto12)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Netto12)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vat12)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vat12)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Netto07)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Netto07)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vat07)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vat07)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Netto03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Netto03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vat03)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vat03)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Netto0)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Netto0)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nettozwol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nettozwol)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bezodl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bezodl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VatBezodl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VatBezodl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypBezodl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypBezodl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NettoNp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NettoNp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Brutto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Brutto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataOtrz)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataOtrz)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MiesVat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiesVat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MiesKs)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiesKs)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Korekta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Korekta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Uwagi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Uwagi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Samochod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Samochod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumerRej)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumerRej)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Eksport)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Eksport)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Notatki)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Notatki)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NajemTyp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NajemTyp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RozlTyp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RozlTyp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FormaP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FormaP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TerminP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TerminP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WartoscZ)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WartoscZ)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Kasa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Kasa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypFakt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypFakt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NipKod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NipKod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpdKod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpdKod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NrEwid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NrEwid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NazwaUsl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NazwaUsl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rok)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rok)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KontoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KontoNavigation.Konto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NazwaSkrNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NazwaSkrNavigation.Nip)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Numer">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

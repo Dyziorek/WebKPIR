@@ -1,0 +1,305 @@
+@model IEnumerable<WebKPIR.Model.Ksiega.Dziennik>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ksiega)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Struktura)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NazwaSkr)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumerDok)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Data)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Dzien)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Opis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rejestr)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Netto22)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Vat22)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Netto12)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Vat12)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Netto07)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Vat07)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Netto03)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Vat03)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Netto0)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nettozwol)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bezodl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.VatBezodl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypBezodl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NettoNp)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Brutto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataOtrz)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MiesVat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MiesKs)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Korekta)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Uwagi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Samochod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumerRej)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Eksport)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Notatki)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NajemTyp)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RozlTyp)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FormaP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TerminP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.WartoscZ)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Kasa)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypFakt)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NipKod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OpdKod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NrEwid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NazwaUsl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rok)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KontoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NazwaSkrNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ksiega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Struktura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazwaSkr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumerDok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dzien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Opis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rejestr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Netto22)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vat22)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Netto12)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vat12)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Netto07)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vat07)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Netto03)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vat03)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Netto0)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nettozwol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bezodl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VatBezodl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypBezodl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NettoNp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brutto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataOtrz)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiesVat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiesKs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Korekta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Uwagi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Samochod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumerRej)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eksport)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notatki)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NajemTyp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RozlTyp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormaP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TerminP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WartoscZ)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kasa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypFakt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NipKod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OpdKod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrEwid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazwaUsl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KontoNavigation.Konto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazwaSkrNavigation.Nip)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Numer">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Numer">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Numer">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

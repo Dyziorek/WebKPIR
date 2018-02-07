@@ -1,0 +1,265 @@
+@page
+@model WebKPIR.Pages.Dziennik.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Dziennik</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Konto" class="control-label"></label>
+                <select asp-for="Dziennik.Konto" class ="form-control" asp-items="ViewBag.Konto"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Ksiega" class="control-label"></label>
+                <input asp-for="Dziennik.Ksiega" class="form-control" />
+                <span asp-validation-for="Dziennik.Ksiega" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Dziennik.Struktura" /> @Html.DisplayNameFor(model => model.Struktura))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NazwaSkr" class="control-label"></label>
+                <input asp-for="Dziennik.NazwaSkr" class="form-control" />
+                <span asp-validation-for="Dziennik.NazwaSkr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NumerDok" class="control-label"></label>
+                <input asp-for="Dziennik.NumerDok" class="form-control" />
+                <span asp-validation-for="Dziennik.NumerDok" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Data" class="control-label"></label>
+                <input asp-for="Dziennik.Data" class="form-control" />
+                <span asp-validation-for="Dziennik.Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Dzien" class="control-label"></label>
+                <input asp-for="Dziennik.Dzien" class="form-control" />
+                <span asp-validation-for="Dziennik.Dzien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Opis" class="control-label"></label>
+                <input asp-for="Dziennik.Opis" class="form-control" />
+                <span asp-validation-for="Dziennik.Opis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Rejestr" class="control-label"></label>
+                <input asp-for="Dziennik.Rejestr" class="form-control" />
+                <span asp-validation-for="Dziennik.Rejestr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Netto22" class="control-label"></label>
+                <input asp-for="Dziennik.Netto22" class="form-control" />
+                <span asp-validation-for="Dziennik.Netto22" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Vat22" class="control-label"></label>
+                <input asp-for="Dziennik.Vat22" class="form-control" />
+                <span asp-validation-for="Dziennik.Vat22" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Netto12" class="control-label"></label>
+                <input asp-for="Dziennik.Netto12" class="form-control" />
+                <span asp-validation-for="Dziennik.Netto12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Vat12" class="control-label"></label>
+                <input asp-for="Dziennik.Vat12" class="form-control" />
+                <span asp-validation-for="Dziennik.Vat12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Netto07" class="control-label"></label>
+                <input asp-for="Dziennik.Netto07" class="form-control" />
+                <span asp-validation-for="Dziennik.Netto07" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Vat07" class="control-label"></label>
+                <input asp-for="Dziennik.Vat07" class="form-control" />
+                <span asp-validation-for="Dziennik.Vat07" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Netto03" class="control-label"></label>
+                <input asp-for="Dziennik.Netto03" class="form-control" />
+                <span asp-validation-for="Dziennik.Netto03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Vat03" class="control-label"></label>
+                <input asp-for="Dziennik.Vat03" class="form-control" />
+                <span asp-validation-for="Dziennik.Vat03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Netto0" class="control-label"></label>
+                <input asp-for="Dziennik.Netto0" class="form-control" />
+                <span asp-validation-for="Dziennik.Netto0" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Nettozwol" class="control-label"></label>
+                <input asp-for="Dziennik.Nettozwol" class="form-control" />
+                <span asp-validation-for="Dziennik.Nettozwol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Bezodl" class="control-label"></label>
+                <input asp-for="Dziennik.Bezodl" class="form-control" />
+                <span asp-validation-for="Dziennik.Bezodl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.VatBezodl" class="control-label"></label>
+                <input asp-for="Dziennik.VatBezodl" class="form-control" />
+                <span asp-validation-for="Dziennik.VatBezodl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.TypBezodl" class="control-label"></label>
+                <input asp-for="Dziennik.TypBezodl" class="form-control" />
+                <span asp-validation-for="Dziennik.TypBezodl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NettoNp" class="control-label"></label>
+                <input asp-for="Dziennik.NettoNp" class="form-control" />
+                <span asp-validation-for="Dziennik.NettoNp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Brutto" class="control-label"></label>
+                <input asp-for="Dziennik.Brutto" class="form-control" />
+                <span asp-validation-for="Dziennik.Brutto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.DataOtrz" class="control-label"></label>
+                <input asp-for="Dziennik.DataOtrz" class="form-control" />
+                <span asp-validation-for="Dziennik.DataOtrz" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.MiesVat" class="control-label"></label>
+                <input asp-for="Dziennik.MiesVat" class="form-control" />
+                <span asp-validation-for="Dziennik.MiesVat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.MiesKs" class="control-label"></label>
+                <input asp-for="Dziennik.MiesKs" class="form-control" />
+                <span asp-validation-for="Dziennik.MiesKs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Dziennik.Korekta" /> @Html.DisplayNameFor(model => model.Korekta))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Uwagi" class="control-label"></label>
+                <input asp-for="Dziennik.Uwagi" class="form-control" />
+                <span asp-validation-for="Dziennik.Uwagi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Dziennik.Samochod" /> @Html.DisplayNameFor(model => model.Samochod))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NumerRej" class="control-label"></label>
+                <input asp-for="Dziennik.NumerRej" class="form-control" />
+                <span asp-validation-for="Dziennik.NumerRej" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Dziennik.Eksport" /> @Html.DisplayNameFor(model => model.Eksport))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Notatki" class="control-label"></label>
+                <input asp-for="Dziennik.Notatki" class="form-control" />
+                <span asp-validation-for="Dziennik.Notatki" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NajemTyp" class="control-label"></label>
+                <input asp-for="Dziennik.NajemTyp" class="form-control" />
+                <span asp-validation-for="Dziennik.NajemTyp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.RozlTyp" class="control-label"></label>
+                <input asp-for="Dziennik.RozlTyp" class="form-control" />
+                <span asp-validation-for="Dziennik.RozlTyp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.FormaP" class="control-label"></label>
+                <input asp-for="Dziennik.FormaP" class="form-control" />
+                <span asp-validation-for="Dziennik.FormaP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.TerminP" class="control-label"></label>
+                <input asp-for="Dziennik.TerminP" class="form-control" />
+                <span asp-validation-for="Dziennik.TerminP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.WartoscZ" class="control-label"></label>
+                <input asp-for="Dziennik.WartoscZ" class="form-control" />
+                <span asp-validation-for="Dziennik.WartoscZ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Kasa" class="control-label"></label>
+                <input asp-for="Dziennik.Kasa" class="form-control" />
+                <span asp-validation-for="Dziennik.Kasa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.TypFakt" class="control-label"></label>
+                <input asp-for="Dziennik.TypFakt" class="form-control" />
+                <span asp-validation-for="Dziennik.TypFakt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Nip" class="control-label"></label>
+                <select asp-for="Dziennik.Nip" class ="form-control" asp-items="ViewBag.Nip"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NipKod" class="control-label"></label>
+                <input asp-for="Dziennik.NipKod" class="form-control" />
+                <span asp-validation-for="Dziennik.NipKod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.OpdKod" class="control-label"></label>
+                <input asp-for="Dziennik.OpdKod" class="form-control" />
+                <span asp-validation-for="Dziennik.OpdKod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NrEwid" class="control-label"></label>
+                <input asp-for="Dziennik.NrEwid" class="form-control" />
+                <span asp-validation-for="Dziennik.NrEwid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.NazwaUsl" class="control-label"></label>
+                <input asp-for="Dziennik.NazwaUsl" class="form-control" />
+                <span asp-validation-for="Dziennik.NazwaUsl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dziennik.Rok" class="control-label"></label>
+                <input asp-for="Dziennik.Rok" class="form-control" />
+                <span asp-validation-for="Dziennik.Rok" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

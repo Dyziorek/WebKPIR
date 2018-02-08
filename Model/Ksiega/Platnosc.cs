@@ -20,9 +20,9 @@ namespace WebKPIR.Model.Ksiega
         public string NazwaPlatn { get; set; }
          [Column("Czas_Platn")]
         public short CzasPlatn { get; set; }
-        [ForeignKey("Forma_P")]
+        [ForeignKey("FormaP")]
         public ICollection<Dziennik> Dziennik { get; set; }
-        [ForeignKey("Forma_P")]
+        [ForeignKey("FormaP")]
         public ICollection<Wpisy> Wpisy { get; set; }
     }
 }
